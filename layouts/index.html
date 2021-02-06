@@ -1,0 +1,40 @@
+{{ define "main" }}
+
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <h1>Apollo - Minimal Blog Theme</h1>
+        <p>Cras ultricies ligula sed magna dictum porta. Vivamus suscipit tortor eget felis porttitor volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget tortor risus. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="section-sm pt-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <div class="post-sorting pb-3 mb-5">
+          <ul class="list-inline border-bottom">
+            <li class="list-inline-item"><a href="">New</a></li>
+            <li class="list-inline-item"><a href="">Popular</a></li>
+          </ul>
+        </div>
+        {{ $paginator:= .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections )}}
+        {{ range $paginator.Pages }}
+        {{ .Render "post" }}
+        {{ end }}
+
+        {{ template "_internal/pagination.html" . }}
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}
