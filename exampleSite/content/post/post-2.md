@@ -4,7 +4,7 @@ date: 2020-09-01T11:07:10+06:00
 image: "images/blog/blog-2.jpg"
 image_webp: "images/blog/blog-2.webp"
 description: "this is meta description"
-categories: ["nature"]
+categories: ["nature", "population"]
 draft: false
 ---
 

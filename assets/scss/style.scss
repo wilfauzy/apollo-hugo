@@ -1,19 +1,26 @@
 /*!------------------------------------------------------------------
-[MAIN STYLESHEET]
-
 PROJECT: Apollo Hugo
 AUTHOR: Gethugothemes
 AUTHOR WEBSITE: https://gethugothemes.com
-
 -------------------------------------------------------------------*/
 
-/*------------------------------------------------------------------
-[TABLE OF CONTENTS]
--------------------------------------------------------------------*/
+// Color Variables
+{{ with site.Params.variables }}
+$primary-color: {{.primary_color}};
+$text-color: {{.text_color}};
+$text-color-dark: {{.text_color_dark}};
+$text-color-light: {{.text_color_light}};
+$body-color: {{.body_color}};
+$border-color: {{.border_color}};
+$black: {{.black}};
+$white: {{.white}};
+$light: {{.light}};
+
+// Font Variables
+$primary-font: '{{.primary_font}}', sans-serif;
+{{ end }}
 
 @import 'css-reset';
-
-@import 'variables';
 
 @import 'mixins';
 

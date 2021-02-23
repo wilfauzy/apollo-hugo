@@ -3,9 +3,6 @@
     width: 300px;
     height: auto;
   }
-  &-card {
-  }
-
   &-meta {
     text-transform: uppercase;
     color: $text-color;
@@ -118,7 +115,6 @@ a.post-title:hover {
       &::before {
         position: absolute;
         content: "";
-        font-family: $icon-font;
         font-size: 14px;
         left: 0;
         top: 5px;
@@ -177,5 +173,25 @@ a.post-title:hover {
   pre {
     padding: 10px 20px;
     background: $light;
+  }
+}
+
+.category-list{
+  border-bottom: 1px solid $border-color;
+  margin-bottom: 50px;
+  li{
+    margin: 0 !important;
+    a{
+      padding: 5px 10px;
+      display: block;
+      border: 1px solid transparent;
+      border-bottom: 0;
+      color: $text-color;
+      &.active{
+        border-color: $primary-color;
+        background-color: $primary-color;
+        color: $white;
+      }
+    }
   }
 }

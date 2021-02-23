@@ -3,29 +3,31 @@
 <!-- checking blog -->
 {{ if or (eq .Section "post") (eq .Section "posts") (eq .Section "blog") (eq .Section "blogs") (eq .Section "news") (eq .Section "categories") (eq .Section "tags") }}
 
-{{ if eq .Section "categories"}}
-<section class="section-sm pb-0">
+<section class="section-sm">
   <div class="container">
     <div class="row">
-      <div class="col-12 text-center">
-        <h1>Category Archives: {{ .Title }}</h1>
-        <nav aria-label="breadcrumb">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="{{site.BaseURL}}">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">{{.Title}}</li>
-          </ol>
-        </nav>
+      <div class="col-lg-8 mx-auto">
+        <h1 class="mb-3">{{ site.Title }}</h1>
+        <div class="content">{{site.Params.banner_content | markdownify}}</div>
       </div>
     </div>
   </div>
 </section>
-{{end}}
 
-<section class="section">
+<section class="section-sm pt-0">
   <div class="container">
     <div class="row">
       <div class="col-lg-8 mx-auto">
-        {{ $paginator:= .Paginate .Data.Pages }}
+        <ul class="list-inline border-bottom category-list">
+          {{ $url := .Permalink }}
+          <li class="list-inline-item"><a class="{{if .IsHome}}active{{end}}" href="{{site.BaseURL}}">New</a></li>
+          {{ range $name, $items := site.Taxonomies.categories }}
+          {{ $category:= add (add (`categories/` | absLangURL) $name ) "/" }}
+          <li class="list-inline-item"><a class="{{ if eq $category $url }}active{{ end }}"
+              href="{{ `categories/` | relLangURL }}{{ $name | urlize | lower }}">{{ $name | humanize }}</a></li>
+          {{ end }}
+        </ul>
+        {{ $paginator:= .Paginate .Data.Pages}}
         {{ range $paginator.Pages }}
         {{ .Render "post" }}
         {{ end }}

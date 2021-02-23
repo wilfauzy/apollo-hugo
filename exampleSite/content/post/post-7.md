@@ -1,10 +1,10 @@
 ---
-title: "The World Ppopulation"
+title: "Shoot Utra Smooth Video"
 date: 2020-09-01T11:07:10+06:00
-image: "images/blog/blog-4.jpg"
-image_webp: "images/blog/blog-4.webp"
+image: "images/blog/blog-7.jpg"
+image_webp: "images/blog/blog-7.webp"
 description: "this is meta description"
-categories: ["population", "nature"]
+categories: ["videography", "photography"]
 draft: false
 ---
 

@@ -1,4 +1,4 @@
-{{ "<!-- navigation -->" | safeHTML }}
+<!-- navigation -->
 <header class="navbar">
   <div class="container">
     <div class="row">
@@ -6,10 +6,9 @@
         <nav class="navbar-container">
           <a class="navbar-brand" href="{{ site.BaseURL | relLangURL }}">
             {{ if site.Params.logo }}
-            <img class="img-fluid" width="{{site.Params.logo_width}}" src="{{ site.Params.logo | absURL}}"
-              alt="{{ site.Title }}">
+            <img class="img-fluid" width="{{site.Params.logo_width}}" src="{{ site.Params.logo | absURL}}" alt="{{ site.Title }}">
             {{ else }}
-            {{site.Title}}
+            {{site.Params.logo_text | markdownify}}
             {{ end }}
           </a>
           <button type="button" class="navbar-toggle" aria-label="Open navigation menu">
@@ -21,8 +20,7 @@
             <ul class="navbar-links">
               {{ range site.Menus.main }}
               <li class="navbar-item">
-                <a class="navbar-link"
-                  href="{{if .Pre}}{{site.BaseURL | absLangURL}}{{.Pre}}{{ .URL }}{{else}}{{.URL | absLangURL}}{{end}}">{{ .Name }}</a>
+                <a class="navbar-link" href="{{if .Pre}}{{site.BaseURL | absLangURL}}{{.Pre}}{{ .URL }}{{else}}{{.URL | absLangURL}}{{end}}">{{ .Name }}</a>
               </li>
               {{ end }}
             </ul>
@@ -32,8 +30,4 @@
     </div>
   </div>
 </header>
-{{ "<!-- /navigation -->" | safeHTML }}
-
-<main class="wrapper">
-
-
+<!-- /navigation -->
