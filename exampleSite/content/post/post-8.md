@@ -1,5 +1,5 @@
 ---
-title: "The World Ppopulation"
+title: "The World Population"
 date: 2020-09-01T11:07:10+06:00
 image: "images/blog/blog-8.jpg"
 image_webp: "images/blog/blog-8.webp"

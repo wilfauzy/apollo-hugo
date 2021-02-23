@@ -23,7 +23,7 @@ unsafe= true
 
 # CSS Plugins
 [[params.plugins.css]]
-link = "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+link = "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" # When you are changing this font, make sure you also change the font name from bottom [site.variables]
 
 # JS Plugins
 [[params.plugins.js]]

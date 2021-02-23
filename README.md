@@ -1,4 +1,4 @@
-# Touchy Hugo Blog Startup
+# Apollo Hugo Blog Startup
 
 A clean and minimal Hugo blog theme for single author. This theme can showcase your blog in a smooth way. This theme is also 100% mobile responsive, powered by bootstrap.
 
@@ -17,16 +17,16 @@ A clean and minimal Hugo blog theme for single author. This theme can showcase y
 <!-- demo -->
 ## Example Site
 
-![touchy](images/screenshot.png)
+![apollo](images/screenshot.png)
 
-👉Check out [Live Demo](http://demo.gethugothemes.com/touchy/)
+👉Check out [Live Demo](http://demo.gethugothemes.com/apollo/)
 
 <!-- easy setup -->
 ## Easy Setup (Hugo + Netlify + Forestry)
-Build your website with **Touchy Hugo** theme by following these easy steps(No Coding Required!)
+Build your website with **apollo Hugo** theme by following these easy steps(No Coding Required!)
 
 _Checkout this video tutorial_
-<a href="https://youtu.be/ResipmZmpDU" target="_blank" title="touchy hugo installation" rel="nofollow"><img width="100%" src="https://user-images.githubusercontent.com/37659754/103056582-88270880-45c7-11eb-9124-ab17bae951ec.png"></a>
+<a href="https://youtu.be/ResipmZmpDU" target="_blank" title="apollo hugo installation" rel="nofollow"><img width="100%" src="https://user-images.githubusercontent.com/37659754/103056582-88270880-45c7-11eb-9124-ab17bae951ec.png"></a>
 
 In this tutorial, we will show you to make your website live without buying any hosting and touching a single line of code.
 
@@ -36,20 +36,20 @@ In this tutorial, we will show you to make your website live without buying any 
 3. [Forestry](https://forestry.io) account to maintain whole project without code.
 
 ### Step 1 : Fork the repository
-First we will fork this [Touchy Hugo](https://github.com/gethugothemes/touchy-hugo) template.
+First we will fork this [apollo Hugo](https://github.com/gethugothemes/apollo-hugo) template.
 
 ### Step 2 : Add your repository in Forestry
 Go to your [Forestry](https://forestry.io) account and click on `import your site now`.
 
-**Or just click this button for import to forestry** [![import to forestry](https://assets.forestry.io/import-to-forestryK.svg)](https://app.forestry.io/quick-start?repo=gethugothemes/touchy-hugo&engine=hugo&version=0.60.1&config=exampleSite) **and 
+**Or just click this button for import to forestry** [![import to forestry](https://assets.forestry.io/import-to-forestryK.svg)](https://app.forestry.io/quick-start?repo=gethugothemes/apollo-hugo&engine=hugo&version=0.60.1&config=exampleSite) **and 
 declare your config.toml file from `exampleSite` directory and fill up basic settings.**
 
 Now mark everything as done. Then go to configuration to change the base url. You can put any url but this have to be similar as netlify. So, for now, put a name which you are going to put in netlify as netlify subdomain.
 
 ### Step 3 : Setup and host website with Netlify
-Here comes the last step . Go to your [netlify](https://netlify.com) account and click add new site . Choose your git repository to import your website in netlify .  And now you can see the forked `touchy hugo` theme. select it and follow the steps. Then go to `site settings` for change the site name. save it and go to `deploy` from top menu, Wait a while and click on `site preview` or just simply go to the subdomain you puted as base url.
+Here comes the last step . Go to your [netlify](https://netlify.com) account and click add new site . Choose your git repository to import your website in netlify .  And now you can see the forked `apollo hugo` theme. select it and follow the steps. Then go to `site settings` for change the site name. save it and go to `deploy` from top menu, Wait a while and click on `site preview` or just simply go to the subdomain you puted as base url.
 
-**Or just click this button to connect netlify** [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gethugothemes/touchy-hugo)
+**Or just click this button to connect netlify** [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gethugothemes/apollo-hugo)
 
 **BOOM! Your site is live.** Now you can go to forestry and add, remove or customize every setting and content.
 
@@ -59,20 +59,20 @@ At the top we have shown an easy hugo installation. But if you still think you w
 
 * Clone the repository
 ```
-$ git clone git@github.com:gethugothemes/touchy-hugo.git
+$ git clone git@github.com:gethugothemes/apollo-hugo.git
 ```
 
 * Go to exampleSite and run hugo server
 ```
-$ cd touchy-hugo/exampleSite/
+$ cd apollo-hugo/exampleSite/
 $ hugo server --themesDir ../..
 ```
-Or Check out [Full Documentation](https://docs.gethugothemes.com/touchy/?ref=github).
+Or Check out [Full Documentation](https://docs.gethugothemes.com/apollo/?ref=github).
 
 <!-- reporting issue -->
 ## Reporting Issues
-We use GitHub Issues as the official bug tracker for the Touchy Template. Please Search [existing issues](https://github.com/gethugothemes/touchy-hugo/issues). It’s possible someone has already reported the same problem.
-If your problem or idea has not been addressed yet, feel free to [open a new issue](https://github.com/gethugothemes/touchy-hugo/issues).
+We use GitHub Issues as the official bug tracker for the apollo Template. Please Search [existing issues](https://github.com/gethugothemes/apollo-hugo/issues). It’s possible someone has already reported the same problem.
+If your problem or idea has not been addressed yet, feel free to [open a new issue](https://github.com/gethugothemes/apollo-hugo/issues).
 
 <!-- support -->
 ## Technical Support or Questions (Paid)
@@ -82,7 +82,7 @@ If you have questions or need help integrating the product please [contact us](m
 ## License
 Copyright &copy; 2020 Designed by [Themefisher](https://themefisher.com) & Developed by [Gethugothemes](https://gethugothemes.com)
 
-**Code License:** Released under the [MIT](https://github.com/gethugothemes/touchy-hugo/blob/master/LICENSE) license.
+**Code License:** Released under the [MIT](https://github.com/gethugothemes/apollo-hugo/blob/master/LICENSE) license.
 
 **Image license:** The images are only for demonstration purposes. They have their own licence, we don't have permission to share those image.
 
