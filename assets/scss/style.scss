@@ -17,7 +17,8 @@ $white: {{.white}};
 $light: {{.light}};
 
 // Font Variables
-$primary-font: '{{.primary_font}}', sans-serif;
+$primary-font: '{{ replaceRE ":[0-9,]+" "" .primary_font }}', sans-serif;
+$icon-font: '{{.icon_font}}';
 {{ end }}
 
 @import 'css-reset';
